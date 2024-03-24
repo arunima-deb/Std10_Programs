@@ -1,8 +1,18 @@
-package com.arunima.stdx.ch4;
+package com.arunima.stdx.ch4 ;
+
 import java.util.* ;
 
-// Armstrong number
-public class E6 {
+/**
+ * Write a program to input a three digit number. Use a method int Armstrong(int n)
+ * to accept the number. The method returns 1, if the number is Armstrong,
+ * otherwise zero(0). 
+ * 
+ * Sample Input: 153 
+ * Sample Output : 153 = 19 + 5° + 3° = 153
+ * 
+ * It is an Armstrong Number. 
+ */
+public class Program_E_6 {
 
 	public static void main(String[] args) 
 	{
