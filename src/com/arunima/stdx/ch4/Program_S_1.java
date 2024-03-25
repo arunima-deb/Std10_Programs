@@ -1,4 +1,4 @@
-package com.arunima.stdx.ch4.todo ;
+package com.arunima.stdx.ch4 ;
 
 import java.util.* ;
 
@@ -11,13 +11,24 @@ public class Program_S_1
 {
     public static void main( String[] args )
     {
-        System.out.println( "----------- Program Title --------------" ) ;
-
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "<Prompt> : " ) ;
-
-        // Logic
-
+        System.out.println( "Enter a number : " ) ;
+        int x = sc.nextInt() ;
+        System.out.println( check(x) ) ;
         sc.close() ;
     }
+    
+    public static int check( int n )
+    {
+    	int numFact = 0 ;
+    	for( int i=1; i<=n; i++ )
+    	{
+    		if( n%i==0 )
+    		{
+    			numFact++ ;
+    		}
+    	}
+    	return ( numFact==2 ) ? 1 : 0 ;
+    }
+    
 }
