@@ -1,4 +1,4 @@
-package com.arunima.stdx.ch4.todo ;
+package com.arunima.stdx.ch4 ;
 
 import java.util.* ;
 
@@ -14,13 +14,27 @@ public class Program_E_11
 {
     public static void main( String[] args )
     {
-        System.out.println( "----------- Program Title --------------" ) ;
-
-        Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "<Prompt> : " ) ;
-
-        // Logic
-
+    	Scanner sc = new Scanner( System.in ) ;
+        System.out.println( "Enter two numbers : " ) ;
+        int a = sc.nextInt() ;
+        int b = sc.nextInt() ;
+        Glcm( a,b ) ;
         sc.close() ;
     }
+    
+    public static void Glcm( int x, int y )
+    {
+    	int hcf = 0;
+    	for( int i=1; i<=((x>y)?x:y); i++)
+    	{
+    		if( x%i==0 && y%i==0 )
+    		{
+    			hcf = i ;
+    		}
+    	}
+		int lcm = (x*y)/hcf ;
+		
+		System.out.println( "LCM = " + lcm ) ;
+    }
+    
 }
