@@ -1,2 +1,2 @@
 # Std10_Programs
-The solutions to ICSE X computer assignments
+The solutions to the programs in my 10th standard Computers textbook reside here.
