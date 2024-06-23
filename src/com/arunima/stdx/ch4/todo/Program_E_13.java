@@ -5,7 +5,7 @@ import java.util.* ;
 /**
  * Write a program using a method Palin( ), to check whether a String is a
  * Palindrome or not. A Palindrome is a String that reads the same from the left to
- * right and vice versa. Sample Input: MADAM, ARORA, ABBA, etc. TICSE 2007] 
+ * right and vice versa. Sample Input: MADAM, ARORA, ABBA, etc. [ICSE 2007] 
  */
 public class Program_E_13
 {
