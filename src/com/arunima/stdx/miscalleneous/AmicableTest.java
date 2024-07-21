@@ -1,4 +1,4 @@
-package com.arunima.stdx.ch4;
+package com.arunima.stdx.miscalleneous;
 
 import java.util.Scanner ;
 

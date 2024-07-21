@@ -10,7 +10,7 @@ public class UJP
     Scanner sc = new Scanner(System.in) ;
     System.out.print( "Enter a character : " );
     char ch = sc.next().charAt(0) ;
-    Prog2(ch) ;
+    Prog3(ch) ;
   }
   
   public static void Prog1( char ch )
@@ -31,6 +31,12 @@ public class UJP
   }
   
   public static void Prog3( char ch )
+  {
+    System.out.println( Character.toLowerCase(ch) ) ;
+  }
+  
+  
+  public static void Prog4( char ch )
   {
     
   }

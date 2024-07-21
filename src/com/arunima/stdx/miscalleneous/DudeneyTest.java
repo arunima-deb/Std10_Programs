@@ -1,4 +1,4 @@
-package com.arunima.stdx.ch4;
+package com.arunima.stdx.miscalleneous;
 
 import java.util.Scanner ;
 
@@ -14,6 +14,8 @@ public class DudeneyTest
       System.out.println( n + " is a Dudeney number." ) ;
     else
       System.out.println( n + " is not a Dudeney number." ) ;
+    
+    sc.close() ;
   }
   
   public static boolean isDudeney(int n)
