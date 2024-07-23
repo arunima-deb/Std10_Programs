@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -16,10 +17,10 @@ public class Program_S_5
     public static void main( String[] args )
     {
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter two numbers : " ) ;
+        println( "Enter two numbers : " ) ;
         int n1 = sc.nextInt() ;
         int n2 = sc.nextInt() ;
-        System.out.println( twin( n1, n2) ) ;
+        println( twin( n1, n2) ) ;
         sc.close() ;
     }
     

@@ -1,5 +1,6 @@
 package com.arunima.stdx.miscalleneous;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.Scanner ;
 
 public class AmicableTest 
@@ -7,14 +8,14 @@ public class AmicableTest
   public static void main(String args[])
   {
     Scanner sc = new Scanner(System.in) ;
-    System.out.println( "Enter two numbers : " ) ;
+    println( "Enter two numbers : " ) ;
     int a = sc.nextInt();
     int b = sc.nextInt();
     
     if( areAmicable(a, b) )
-      System.out.println( a + " and " + b + " are amicable numbers." ) ;
+      println( a + " and " + b + " are amicable numbers." ) ;
     else
-      System.out.println( a + " and " + b + " are not amicable numbers." ) ;
+      println( a + " and " + b + " are not amicable numbers." ) ;
     
     sc.close();
   }

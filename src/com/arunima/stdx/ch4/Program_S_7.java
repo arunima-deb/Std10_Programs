@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -18,7 +19,7 @@ public class Program_S_7
     public static void main( String[] args )
     {
     	Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter a word : " ) ;
+        println( "Enter a word : " ) ;
         String s = sc.next() ;
         //display(s) ;
         displayVowels(s) ;
@@ -32,7 +33,7 @@ public class Program_S_7
     		if( st.charAt(i)=='a' || st.charAt(i)=='e' || st.charAt(i)=='i' || st.charAt(i)=='o' || st.charAt(i)=='u' || 
     			st.charAt(i)=='A' || st.charAt(i)=='E' || st.charAt(i)=='I' || st.charAt(i)=='O' || st.charAt(i)=='U' )
     		{
-    			System.out.println( st.charAt(i) ) ;
+    			println( st.charAt(i) ) ;
     		}
     	}
     }
@@ -56,7 +57,7 @@ public class Program_S_7
         	// "COMPUTER".indexOf('A') = -1
     		if( vowels.indexOf( ch ) != -1 )
     		{
-    			System.out.println( ch ) ;
+    			println( ch ) ;
     		}
     	}
     }

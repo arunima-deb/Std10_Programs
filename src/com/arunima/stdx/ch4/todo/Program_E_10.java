@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4.todo ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -15,10 +16,10 @@ public class Program_E_10
 {
     public static void main( String[] args )
     {
-        System.out.println( "----------- Program Title --------------" ) ;
+        println( "----------- Program Title --------------" ) ;
 
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "<Prompt> : " ) ;
+        println( "<Prompt> : " ) ;
 
         // Logic
 

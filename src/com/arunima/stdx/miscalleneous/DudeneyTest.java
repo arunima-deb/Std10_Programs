@@ -1,5 +1,6 @@
 package com.arunima.stdx.miscalleneous;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.Scanner ;
 
 public class DudeneyTest 
@@ -7,13 +8,13 @@ public class DudeneyTest
   public static void main(String args[])
   {
     Scanner sc = new Scanner(System.in) ;
-    System.out.print("Enter a number : ");
+    print("Enter a number : ");
     int n = sc.nextInt() ;
     
     if( isDudeney(n) )
-      System.out.println( n + " is a Dudeney number." ) ;
+      println( n + " is a Dudeney number." ) ;
     else
-      System.out.println( n + " is not a Dudeney number." ) ;
+      println( n + " is not a Dudeney number." ) ;
     
     sc.close() ;
   }
