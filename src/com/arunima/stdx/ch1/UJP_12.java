@@ -1,5 +1,6 @@
-package com.arunima.stdx.ch2;
+package com.arunima.stdx.ch1;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.Scanner ;
 
 public class UJP_12 
@@ -7,7 +8,7 @@ public class UJP_12
   public static void main(String args[])
   {
     Scanner sc = new Scanner(System.in) ;
-    System.out.println( "Enter choice : " ) ;
+    println( "Enter choice : " ) ;
     char ch = sc.next().charAt(0) ;
     
     switch(ch)
@@ -25,11 +26,10 @@ public class UJP_12
       {
         if( j%2==0 )
         {
-          System.out.print( Character.toUpperCase( (char)j ) ) ;
+          print( Character.toUpperCase( (char)j ) ) ;
         }
       }
-      System.out.println() ;
+      println() ;
     }
   }
-  
 }

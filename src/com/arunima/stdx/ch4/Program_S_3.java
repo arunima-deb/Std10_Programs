@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -12,13 +13,13 @@ public class Program_S_3
     public static void main( String[] args )
     {
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter a number : " ) ;
+        println( "Enter a number : " ) ;
         int x = sc.nextInt() ;
         
         if( reverse(x)==x )
-        	System.out.println( x + " is a palindrome." ) ;
+        	println( x + " is a palindrome." ) ;
         else
-        	System.out.println( x + " is not a palindrome." ) ;
+        	println( x + " is not a palindrome." ) ;
         
         sc.close() ;
     }

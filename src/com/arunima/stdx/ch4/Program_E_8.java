@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -18,10 +19,10 @@ public class Program_E_8
 {
     public static void main( String[] args )
     {
-        System.out.println( "----------- Ex 8 - Factors --------------" ) ;
+        println( "----------- Ex 8 - Factors --------------" ) ;
 
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter the number : " ) ;
+        println( "Enter the number : " ) ;
 
         // Logic
 

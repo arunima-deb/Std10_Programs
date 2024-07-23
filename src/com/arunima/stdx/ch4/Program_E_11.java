@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -15,7 +16,7 @@ public class Program_E_11
     public static void main( String[] args )
     {
     	Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter two numbers : " ) ;
+        println( "Enter two numbers : " ) ;
         int a = sc.nextInt() ;
         int b = sc.nextInt() ;
         Glcm( a,b ) ;
@@ -34,7 +35,7 @@ public class Program_E_11
     	}
 		int lcm = (x*y)/hcf ;
 		
-		System.out.println( "LCM = " + lcm ) ;
+		println( "LCM = " + lcm ) ;
     }
     
 }

@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -12,9 +13,9 @@ public class Program_S_1
     public static void main( String[] args )
     {
         Scanner sc = new Scanner( System.in ) ;
-        System.out.println( "Enter a number : " ) ;
+        println( "Enter a number : " ) ;
         int x = sc.nextInt() ;
-        System.out.println( check(x) ) ;
+        println( check(x) ) ;
         sc.close() ;
     }
     

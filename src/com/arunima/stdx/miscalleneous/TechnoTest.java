@@ -1,5 +1,6 @@
 package com.arunima.stdx.miscalleneous;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.Scanner ;
 
 public class TechnoTest 
@@ -7,13 +8,15 @@ public class TechnoTest
   public static void main(String args[])
   {
     Scanner sc = new Scanner(System.in) ;
-    System.out.print( "Enter a number : " ) ;
+    print( "Enter a number : " ) ;
     int n = sc.nextInt() ;
     
     if( isTechno(n) )
-      System.out.println( n + " is a tech number." ) ;
+      println( n + " is a tech number." ) ;
     else
-      System.out.println( n + " is not a tech number." ) ;
+      println( n + " is not a tech number." ) ;
+    
+    sc.close() ;
   }
   
   public static boolean isTechno(int n)

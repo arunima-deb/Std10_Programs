@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.Scanner ;
 
 public class Pronic {
@@ -7,12 +8,12 @@ public class Pronic {
   public static void main(String[] args) 
   {
     Scanner sc = new Scanner(System.in) ;
-    System.out.print( "Enter a number : " ) ;
+    print( "Enter a number : " ) ;
     int n = sc.nextInt() ;
     if( isPronic(n) )
-      System.out.println( n + " is a pronic number." ) ;
+      println( n + " is a pronic number." ) ;
     else
-      System.out.println( n + " is not a pronic number." ) ;  
+      println( n + " is not a pronic number." ) ;  
     sc.close() ;
   }
   

@@ -1,5 +1,6 @@
 package com.arunima.stdx.ch4 ;
 
+import static com.arunima.util.IOUtil.* ;
 import java.util.* ;
 
 /**
@@ -17,16 +18,16 @@ public class Program_E_6 {
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in) ;
-		System.out.println( "Enter a number : " ) ;
+		println( "Enter a number : " ) ;
 		
 		int input = sc.nextInt() ;
 		if( armstrong( input ) == 1 ) 
 		{
-			System.out.println( input + " is an Armstrong number." ) ;
+			println( input + " is an Armstrong number." ) ;
 		}
 		else 
 		{
-			System.out.println( input + " is not an Armstrong number." ) ;
+			println( input + " is not an Armstrong number." ) ;
 		}
 		
 		sc.close() ;
