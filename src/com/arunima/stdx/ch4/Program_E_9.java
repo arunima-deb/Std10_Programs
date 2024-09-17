@@ -24,7 +24,6 @@ public class Program_E_9
         int n = sc.nextInt();
         
         double S = fact(n)/((fact(m)*fact((n-m)))) ;
-        println(S) ;
         
         sc.close() ;
     }
