@@ -3,7 +3,9 @@ package com.arunima.stdx.ch3_arrays.algorithms;
 import java.util.Scanner ; 
 
 public class Sorting {
+	
 	public static void main(String args[]) {
+		
 		int[] array = new int[8] ;
 		Scanner sc = new Scanner(System.in) ;
 		System.out.println( "Enter 8 elements : " ) ;
@@ -11,14 +13,29 @@ public class Sorting {
 			array[i] = sc.nextInt() ;
 		sc.close() ;
 		
-		Sorting coordinator = new Sorting() ;
+		Sorting coordinator = new Sorting( array ) ;
 		
-		coordinator.printArray( "\nUnsorted array", array ) ;
-		coordinator.selectionSort(array) ;
-		coordinator.printArray( "Sorted array", array ) ;
+		coordinator.printArray( "\nUnsorted array" ) ;
+		coordinator.selectionSort() ;
+		coordinator.printArray( "Sorted array" ) ;
 	}
 	
-	public void selectionSort( int[] array ) 
+	private int[] array ;
+	
+	public Sorting( int[] array ) {
+		this.array = array ;
+	}
+	
+	public void bubbleSort() {
+		for( int i=0; i<array.length-1; i++ ) {
+			for( int j=0; j<array.length-i-1; j++ ) {
+				if( array[j]>array[j+1] )
+					swap( array, j, j+1 ) ;
+			}
+		}
+	}
+	
+	public void selectionSort() 
     {    
         int minIndex ;
         int unsortedStart ;
@@ -26,12 +43,19 @@ public class Sorting {
         for( int i=0; i<array.length; i++ )
         {
             unsortedStart = i ;
-            minIndex = getMinIndex( array, unsortedStart ) ;
+            minIndex = getMinIndex( unsortedStart ) ;
             swap( array, unsortedStart, minIndex ) ;
         }
     }
 	
-	public int getMinIndex( int[] array, int firstIndex )
+	public void printArray( String msg ) {
+		System.out.print( msg + " : [ " + array[0] ) ;
+		for( int i=1; i<array.length; i++ )
+			System.out.print( ", " + array[i] ) ;
+		System.out.print( " ]\n" ) ;
+	}
+
+	private int getMinIndex( int firstIndex )
     {
         int minIndex = firstIndex ;
         for( int i=firstIndex; i<array.length; i++ )
@@ -42,25 +66,10 @@ public class Sorting {
         return minIndex ;
     }
 	
-	public void bubbleSort( int[] array ) {
-		for( int i=0; i<array.length-1; i++ ) {
-			for( int j=0; j<array.length-i-1; j++ ) {
-				if( array[j]>array[j+1] )
-					swap( array, j, j+1 ) ;
-			}
-		}
-	}
-	
-	public void swap( int[] array, int prevIndex, int newIndex ) {
+	private void swap( int[] array, int prevIndex, int newIndex ) {
 		int temp = array[prevIndex] ;
 		array[prevIndex] = array[newIndex] ;
 		array[newIndex] = temp ;
 	}
 	
-	public void printArray( String msg, int[] array ) {
-		System.out.print( msg + " : [ " + array[0] ) ;
-		for( int i=1; i<array.length; i++ )
-			System.out.print( ", " + array[i] ) ;
-		System.out.print( " ]\n" ) ;
-	}
 }
