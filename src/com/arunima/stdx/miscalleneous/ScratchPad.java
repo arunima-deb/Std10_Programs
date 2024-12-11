@@ -1,21 +1,21 @@
 package com.arunima.stdx.miscalleneous;
 
-import com.arunima.stdx.ch3_arrays.algorithms.Sorting ;
+import com.arunima.stdx.ch3_arrays.algorithms.Basics ;
 
 public class ScratchPad {
 
 	public static void main(String[] args) {
 		int[] array = { 8, 78, 3, 89, 5 } ;
-		Sorting.printArray( "Unsorted array", array) ;
+		Basics.printArray( "Unsorted array", array) ;
 		selectionSortLocal(array) ;
-		Sorting.printArray( "Sorted array", array ) ;
+		Basics.printArray( "Sorted array", array ) ;
 	}
 
 	public static void bubbleSortLocal(int[] array) {
 		for( int i=0; i<array.length-1; i++ ) {
 			for( int j=i; j<array.length-1; j++ ) {
 				if( array[j+1]<array[j] )
-					Sorting.swap( array, j, j+1 ) ;
+					Basics.swap( array, j, j+1 ) ;
 			}
 		}
 	}
@@ -25,7 +25,7 @@ public class ScratchPad {
 		for( i=0; i<array.length; i++ )
 		{
 			minIndexLocal = getMinIndex(array, i) ;
-			Sorting.swap( array, i, minIndexLocal) ;
+			Basics.swap( array, i, minIndexLocal) ;
 		}
 	}
 	

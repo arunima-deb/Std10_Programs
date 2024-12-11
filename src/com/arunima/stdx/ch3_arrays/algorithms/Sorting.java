@@ -15,9 +15,9 @@ public class Sorting {
 		
 		Sorting coordinator = new Sorting( array ) ;
 		
-		coordinator.printArray( "\nUnsorted array", array ) ;
+		Basics.printArray( "\nUnsorted array", array ) ;
 		coordinator.bubbleSort() ;
-		coordinator.printArray( "Sorted array", array ) ;
+		Basics.printArray( "Sorted array", array ) ;
 	}
 	
 	private int[] array ;
@@ -30,7 +30,7 @@ public class Sorting {
 		for( int i=0; i<array.length-1; i++ ) {
 			for( int j=0; j<array.length-i-1; j++ ) {
 				if( array[j]>array[j+1] )
-					swap( array, j, j+1 ) ;
+					Basics.swap( array, j, j+1 ) ;
 			}
 		}
 	}
@@ -44,16 +44,9 @@ public class Sorting {
         {
             unsortedStart = i ;
             minIndex = getMinIndex( unsortedStart ) ;
-            swap( array, unsortedStart, minIndex ) ;
+            Basics.swap( array, unsortedStart, minIndex ) ;
         }
     }
-	
-	public static void printArray( String msg, int[] array ) {
-		System.out.print( msg + " : [ " + array[0] ) ;
-		for( int i=1; i<array.length; i++ )
-			System.out.print( ", " + array[i] ) ;
-		System.out.print( " ]\n" ) ;
-	}
 
 	private int getMinIndex( int firstIndex )
     {
@@ -65,11 +58,5 @@ public class Sorting {
         }
         return minIndex ;
     }
-	
-	public static void swap( int[] array, int prevIndex, int newIndex ) {
-		int temp = array[prevIndex] ;
-		array[prevIndex] = array[newIndex] ;
-		array[newIndex] = temp ;
-	}
 	
 }
