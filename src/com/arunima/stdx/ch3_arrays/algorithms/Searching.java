@@ -43,8 +43,11 @@ public class Searching
 		int keyIndex = -1 ;
 		for( int i=0; i<array.length; i++ )
 		{
-			if( array[i]==key )
+			if( array[i]==key ) 
+			{
 				keyIndex = i ;
+				break ;
+			}
 		}
 		return keyIndex ;
 	}
