@@ -9,6 +9,12 @@ public class ScratchPad {
 		Basics.printArray( "Unsorted array", array) ;
 		selectionSortLocal(array) ;
 		Basics.printArray( "Sorted array", array ) ;
+		System.out.println( ScratchPad() );
+	}
+	
+	public static int ScratchPad()
+	{
+		return 23 ;
 	}
 
 	public static void bubbleSortLocal(int[] array) {
